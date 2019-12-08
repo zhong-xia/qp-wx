@@ -1,0 +1,6 @@
+text{
+  display: inline-block;
+  font-size: 35rpx;
+  margin-left: 300rpx;
+  margin-top: 40rpx;
+}

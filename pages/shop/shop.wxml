@@ -1,0 +1,227 @@
+<view class="container">
+  <view class="header">
+    <view class="header-top">
+      <image class="img" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2667915729,1355500843&fm=26&gp=0.jpg"></image>
+      <view class="name">江夏汽配</view>
+      <view class="ad">公告：欢迎来到江夏汽配，这里拥有所有汽车配件佛文件foe将佛法讲我仿佛</view>
+      <button size="mini" class="shoucang">收藏</button>
+    </view>
+
+    <view class="card">
+      <view class="c1">满99减5</view>
+      <view class="c2">满200减10</view>
+      <view class="c3">满300减20</view>
+    </view>
+  </view>
+
+
+  <view class="top-tab flex-wrp flex-tab ">
+    <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+      {{itemName}}
+    </view>
+  </view>
+
+  <scroll-view class="assess-container" scroll-y="true" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="content-container" hidden="{{currentNavtab==0 ? '' : true}}">
+      <scroll-view scroll-y class="classify-container">
+        <view class="classify" wx:for="{{classifyList}}" wx:for-index="index" wx:for-item="itemName" bindtap="switchClassify" data-index="{{index}}">
+          <view class="name">{{itemName}}</view>
+        </view>
+      </scroll-view>
+
+      <scroll-view scroll-y class="right-content">
+        <view class="content-right" hidden="{{classifyTab==0 ? '' : true}}">
+          <view class="content-title">热销</view>
+          <view class="goods">
+            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2145248837,3381755642&fm=26&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">制冷剂</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+          <view class="goods">
+            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2145248837,3381755642&fm=26&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">制冷剂</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+
+        </view>
+
+        <view class="content-right" hidden="{{classifyTab==1 ? '' : true}}">
+          <view class="content-title">新品</view>
+          <view class="goods">
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2121723689,658903715&fm=15&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">汽车仪表</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+          <view class="goods">
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2121723689,658903715&fm=15&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">汽车仪表</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+
+        </view>
+        <view class="content-right" hidden="{{classifyTab==2 ? '' : true}}">
+          <view class="content-title">制动系统</view>
+          <view class="goods">
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1634137265,1663209809&fm=15&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">制动系统</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+        </view>
+        <view class="content-right" hidden="{{classifyTab==3 ? '' : true}}">
+          <view class="content-title">养护美化</view>
+          <view class="goods">
+            <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2031481473,3584513131&fm=26&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">养护美化</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+        </view>
+        <view class="content-right" hidden="{{classifyTab==4 ? '' : true}}">
+          <view class="content-title">行走系统</view>
+          <view class="goods">
+            <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2139764238,1269926515&fm=26&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">行走系统</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+        </view>
+        <view class="content-right" hidden="{{classifyTab==5 ? '' : true}}">
+          <view class="content-title">配件</view>
+          <view class="goods">
+            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2722761662,3541203035&fm=26&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">配件</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+        </view>
+        <view class="content-right" hidden="{{classifyTab==6 ? '' : true}}">
+          <view class="content-title">转向系统</view>
+          <view class="goods">
+            <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=74186252,2889767928&fm=26&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">转向系统</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+        </view>
+        <view class="content-right" hidden="{{classifyTab==7 ? '' : true}}">
+          <view class="content-title">电器</view>
+          <view class="goods">
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2398013298,3607595870&fm=26&gp=0.jpg" class="img1"></image>
+            <view class="goods-info">
+              <text class="info-title">电器</text>
+              <text class="sale">月销200</text>
+              <text class="price">￥50</text>
+            </view>
+            <button size="mini" class="jia">+</button>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <view class="assess" hidden="{{currentNavtab==1 ? '' : true}}">
+      <view class="assess-content" wx:for="{{feed}}" wx:for-index="{{index}}">
+        <view class="assess-content-left">
+          <image class="userHead" src="{{item.userHeadImg}}"></image>
+        </view>
+        <view class="assess-content-right">
+          <view class="assess-rightHeader">
+            <view class="userInfo">
+              <text class="userName">{{item.userName}}</text>
+              <view class="userGoods">
+                <text class="goodsTime">{{item.goodsTime}}</text>
+                <text class="goodsName">{{item.goodsName}}</text>
+              </view>
+            </view>
+            <image class="icon" src="/images/userMore.png"></image>
+          </view>
+          <view class="assess-rightBody">
+            <text class="assess-rightBodyContent">{{item.rightBodyContent}}</text>
+            <image class="rightBodyImg" src="{{item.rightBodyImg}}"></image>
+          </view>
+          <view class="assess-rightBottom">
+            <text class="liulan">浏览{{item.liulan}}次</text>
+            <view class="bottomCommit">
+              <image src="/images/评论.png" class="pl"></image>
+              <text class="pinglun">评论</text>
+            </view>
+            <view class="bottomZan">
+              <image class="zan" src="/images/点赞.png "></image>
+              <text class="dianzan">点赞</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="hotel" hidden="{{currentNavtab==2 ? '' : true}}">
+      <view class="hotelTop">
+        <view class="top1">
+          <view class="top1-left">
+            <image class="icon1" src="/images/定位.png"></image>
+            <text class="address">山东省济南市槐荫区xxxx</text>
+          </view>
+          <label>|</label>
+          <image class="phone" src="/images/电话.png"></image>
+        </view>
+        <view class="top2">
+          <image class="icon2" src="/images/安全.png"></image>
+          <text class="safe">查看商品安全档案</text>
+          <image class="right" src="/images/右箭头.png"></image>
+        </view>
+
+      </view>
+      <view class="hotelBottom">
+        <view class="bottom1">
+          <image class="serve" src="/images/记录.png"></image>
+          <text class="offer">配送服务：由 商家 提供配送服务</text>
+        </view>
+        <view class="bottom2">
+          <image class="time" src="/images/时间.png"></image>
+          <text class="offer">配送时间：10:30-22:00</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+<view class="footer">
+  <view class="cart">
+    <image src="/images/购物车.png"></image>
+    <view class="count">2</view>
+  </view>
+  <text class="money">￥100</text>
+  <button class="last" size="mini">去结算</button>
+</view>
+
+</view>

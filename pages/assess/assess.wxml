@@ -1,0 +1,62 @@
+<view class="assessContainer">
+  <view class="page">
+    <view class="assessHead">
+    <block wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+      <view class="list-bottom" hidden="{{Index == index ? '' : true}}">
+        <image class="goodImg" src="{{item.goodImg}}"></image>
+        <view class="goodInfo">
+          <text class="num">数量：{{item.num}}</text>
+          <text class="price">总价：￥{{item.price}}</text>
+        </view>
+      </view>
+    </block>
+      
+
+      <view class="assessInfo">
+        <view class="infoHead">
+          <view class="infoHeadTop">
+            <text class="desc">描述相符</text>
+            <view class="xing">
+              <image  class='stars' bindtap="changeColor" data-index='0' data-no="{{item}}" wx:for="{{stardata}}" src="{{flag[0]>=item? '/images/五星红.png': '/images/五星灰.png'}}"></image>
+             <view style='margin-left: 30rpx;'>{{startext[0]}}</view>
+            </view>
+          </view>
+          <textarea class="input" placeholder="请书写你的评论"></textarea>
+        </view>
+        <view class="infoBottom">
+          <text class="add">晒图片、视频评论</text>
+          <view class="addBottom">
+            <view class="camera" bindtap="switchCamera">
+              <image src="/images/相机.png" class="dotted"></image>
+              <text class="text">添加图片</text>
+            </view>
+            <view class="video" bindtap="switchVideo">
+              <image src="/images/视频.png" class="dotted"></image>
+              <text class="text">添加视频</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="shopAccess">
+      <view class="shopAccessTitle">店铺评价</view>
+      <view class="shopAccessContent">
+          <view class="serve">
+            <text class="song">送货服务</text>
+            <view class="xing">
+              <image  class='stars' bindtap="changeColor" data-index='1' data-no="{{item}}" wx:for="{{stardata}}" src="{{flag[1]>=item? '/images/五星红.png': '/images/五星灰.png'}}"></image>
+             <view style='margin-left: 30rpx;'>{{startext[1]}}</view>
+            </view>
+          </view>
+          <view class="attitude">
+            <text class="song">服务态度</text>
+            <view class="xing">
+              <image  class='stars' bindtap="changeColor" data-index='2' data-no="{{item}}" wx:for="{{stardata}}" src="{{flag[2]>=item? '/images/五星红.png': '/images/五星灰.png'}}"></image>
+             <view style='margin-left: 30rpx;'>{{startext[2]}}</view>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

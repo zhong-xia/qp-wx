@@ -1,0 +1,197 @@
+.container{
+  width: 100%;
+  height: 1200rpx;
+}
+.page{
+  width: 100%;
+  height: 1200rpx;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background: #eee;
+}
+.address{
+  position: relative;
+  height: 150rpx;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+.location{
+  width: 120rpx;
+  height: 150rpx;
+}
+.localImg{
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  background: rgb(231, 90, 8);
+  margin: 35rpx auto;
+}
+.imgB{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 57rpx;
+top: 70rpx;
+
+}
+.addressInfo{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+.userInfo{
+  height: 50rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.name{
+  font-size: 32rpx;
+  color: #000;
+}
+.phone{
+  font-size: 26rpx;
+color: #777;
+padding-top: 8rpx;
+padding-left: 10rpx;
+
+}
+.userAddress{
+  font-size: 26rpx;
+  color: #000;
+  padding-left: 10rpx;
+  white-space: normal;
+}
+.content{
+  box-sizing: border-box;
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.list-bottom {
+  width: 100%;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.goodImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.goodInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #888;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+.assessInfo{
+  width: 100%;
+  box-sizing: border-box;
+}
+.contentBottom{
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+.song{
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  color: #000;
+  margin-bottom: 20rpx;
+}
+.group{
+  margin-left: 30rpx;
+}
+.other{
+  margin-left: 20rpx;
+}
+.zhu{
+    height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  color: #000;
+}
+.tian{
+  margin-left: 20rpx;
+}
+.bottom{
+    height: 300rpx;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.bottomTap{
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  flex-direction: row;
+}
+.ding{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 5rpx;
+}
+.font{
+  font-size: 32rpx;
+  color: #000;
+}
+.bottomContent{
+  margin-left: 50rpx;
+  box-sizing: border-box;
+}
+.hao,.shou,.xia,.shu,.zong{
+  height: 45rpx;
+  line-height:45rpx;
+}
+.left{
+  font-size: 30rpx;
+  color: #777;
+  letter-spacing: 20rpx;
+}
+.left1{
+  font-size: 30rpx;
+  color: #777;
+  letter-spacing: 7rpx;
+}
+.left2{
+  font-size: 30rpx;
+  color: #777;
+  letter-spacing: 40rpx;
+}
+.right{
+  color: #000;
+  font-size: 30rpx;
+}
+button:not([size='mini']){
+  width: 100%;
+}
+button{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background:orange;
+}

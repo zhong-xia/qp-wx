@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText":"发现",
+  "enablePullDownRefresh":false,
+  "usingComponents": {
+    "waterfall":"/component/waterfall/waterfall",
+    "wang":"/component/wang/wang"
+  }
+}

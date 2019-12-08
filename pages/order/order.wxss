@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+}
+
+.top {
+  width: 100%;
+  position: fixed;
+  height: 90rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 2px 2px #bebebe;
+  z-index: 9999;
+}
+
+.top-item {
+  text-align: center;
+  flex: 1;
+  line-height: 90rpx;
+}
+
+.top-item.active {
+  font-weight: bold;
+  border-bottom: 1px solid #feb70f;
+}
+
+.content {
+  padding: 0 20rpx;
+  background: #eee;
+  top: 100rpx;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+swiper {
+  width: 100%;
+  height: 300rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.list {
+  width: 100%;
+  height: 350rpx;
+  margin-top: 20rpx;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 10rpx;
+  position: relative;
+}
+
+.list-top {
+  padding: 20rpx;
+  height: 65rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.listHead {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+.listTitle {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #000;
+  vertical-align: bottom;
+}
+
+.result {
+  position: absolute;
+  right: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.list-bottom {
+  width: 100%;
+  height: 100rpx;
+  margin: 10rpx 0 0 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.goodImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.goodInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #888;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+
+.pingjia {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  border: 1px solid #bebebe;
+  border-radius: 20rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+.noUse{
+  width: 100%;
+  height: 400rpx;
+}
+.jilu{
+  width: 200rpx;
+  height: 250rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.jilu image{
+  width: 100%;
+  height: 100%;
+}
+.noUse text{
+  font-size: 35rpx;
+  margin-left: 280rpx;
+}

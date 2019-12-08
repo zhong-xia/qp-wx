@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="header">
+    <view class="searchBar">
+      <image src="/images/搜索.png"></image>
+      <input placeholder="请输入内容"></input>
+    </view>
+    <button size="mini">搜索</button>
+  </view>
+  <view class="searchContent">
+    <view class="hot">热门搜索</view>
+    <view class="hotItem">
+      <navigator class="content">汽配城</navigator>
+      <navigator class="content">汽配商品</navigator>
+      <navigator class="content">汽配件</navigator>
+      <navigator class="content">汽配养护品</navigator>
+    </view>
+  </view>
+  <view class="searchRecent">
+    <view class="recent">最近搜索</view>
+    <view class="recentItem">
+      <navigator class="recentCon">汽配城</navigator>
+      <navigator class="recentCon">汽配商品</navigator>
+      <navigator class="recentCon">汽配件</navigator>
+      <navigator class="recentCon">汽配养护品</navigator>
+    </view>
+  </view>
+</view>

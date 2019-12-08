@@ -1,0 +1,133 @@
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="header {{scrollDown ? 'scrolled' :''}} ">
+    <view class="location">
+      <image class="icon" src="/images/定位.png"></image>
+      定位中
+    </view>
+    <view class="search" bindtap="tapSearch">
+      <image class="icon" src="/images/搜索.png"></image>
+      请输入与搜索内容
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <swiper class="swiper" autoplay indicator-dots circular>
+    <block wx:for="{{swiperImg}}">
+      <swiper-item>
+        <image class="img" src="{{item.img}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 菜单栏 -->
+  <view class="menu">
+    <block wx:for="{{menuList}}">
+      <navigator class="menu-item" url="/pages/search/search">
+        <image class="menu-img" src="{{item.img}}"></image>
+        <text>{{item.name}}</text>
+      </navigator>
+    </block>
+  </view>
+  <view class="menu">
+    <block wx:for="{{menuList2}}">
+      <navigator class="menu-item" url="/pages/search/search">
+        <image class="menu-img" src="{{item.img}}"></image>
+        <text>{{item.name}}</text>
+      </navigator>
+    </block>
+  </view>
+
+  <!-- 优惠专区 -->
+  <view class="section">
+    <view class="section-title">热门品牌</view>
+    <image src="http://img.qipeiren.com/qipeiren/images/brand-icon/new/201706/20170601085317581904.png"></image>
+  </view>
+  <!-- 热卖产品 -->
+  <view class="section">
+    <view class="section-title">热卖产品</view>
+    <image src="http://img.qipeiren.com//UploadFile/UserProPic/2019/3/17/4a20be46068a18968465-220.jpg"></image>
+  </view>
+  <!-- 附近商城 -->
+  <view class="section">
+    <view class="section-title">附近商城</view>
+    <view class="filters">
+      <view class="filter {{filterID==1?'active':''}}" bindtap="tapFilter" data-id='1'>综合排序
+        <text class="v">↓</text>
+      </view>
+      <view class="filter {{filterID==2?'active':''}}" bindtap="tapFilter" data-id='2'>销量最高
+        <text class="v">↓</text>
+      </view>
+      <view class="filter {{filterID==3?'active':''}}" bindtap="tapFilter" data-id='3'>距离最近
+        <text class="v">↓</text>
+      </view>
+    </view>
+    <view class="section-show">
+      <block wx:for="{{showList}}" wx:if="{{filterID==1 ?'show':''}}">
+        <view class="show-item" bindtap="navigate">
+          <image src="{{item.img}}"></image>
+          <view class="show-info">
+            <view class="info-title">{{item.title}}</view>
+            <view class="info-score">
+              <view class="comment">{{item.comment}}</view>
+              <view class="score">{{item.score}}分</view>
+              <view class="commentNum">{{item.commentNum}}人评论</view>
+            </view>
+            <view class="info-tab">
+              <view class="address">{{item.address}}</view>
+              <view class="introduce">{{item.introduce}}</view>
+              <view>
+                <text class="price">￥{{item.price}}</text>
+                <text class="men">门市价￥{{item.men}}</text>
+                <text class="shou">已售{{item.shou}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <block wx:for="{{showList1}}" wx:if="{{filterID==2 ?'show':''}}">
+        <view class="show-item" bindtap="navigate">
+          <image src="{{item.img}}"></image>
+          <view class="show-info">
+            <view class="info-title">{{item.title}}</view>
+            <view class="info-score">
+              <view class="comment">{{item.comment}}</view>
+              <view class="score">{{item.score}}分</view>
+              <view class="commentNum">{{item.commentNum}}人评论</view>
+            </view>
+            <view class="info-tab">
+              <view class="address">{{item.address}}</view>
+              <view class="introduce">{{item.introduce}}</view>
+              <view>
+                <text class="price">￥{{item.price}}</text>
+                <text class="men">门市价￥{{item.men}}</text>
+                <text class="shou">已售{{item.shou}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+       <block wx:for="{{showList2}}" wx:if="{{filterID==3 ?'show':''}}">
+        <view class="show-item" bindtap="navigate">
+          <image src="{{item.img}}"></image>
+          <view class="show-info">
+            <view class="info-title">{{item.title}}</view>
+            <view class="info-score">
+              <view class="comment">{{item.comment}}</view>
+              <view class="score">{{item.score}}分</view>
+              <view class="commentNum">{{item.commentNum}}人评论</view>
+            </view>
+            <view class="info-tab">
+              <view class="address">{{item.address}}</view>
+              <view class="introduce">{{item.introduce}}</view>
+              <view>
+                <text class="price">￥{{item.price}}</text>
+                <text class="men">门市价￥{{item.men}}</text>
+                <text class="shou">已售{{item.shou}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

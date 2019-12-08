@@ -1,0 +1,63 @@
+<view class="container">
+    <view class="page">
+      <view class="head">
+    <view class="userImg">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="userRight">
+      <open-data type="userNickName" class="userName"></open-data>
+      <view class="userAddress">
+        <open-data type="userCountry" lang="zh_CN"></open-data>·
+        <open-data type="userProvince" lang="zh_CN"></open-data>·
+        <open-data type="userCity" lang="zh_CN"></open-data>
+      </view>
+    </view>
+  </view>
+
+  <view class="myContent">
+    <view class="myContent1">
+      <view class="commit" bindtap="switchAccess">
+        <text>我的评价</text>
+        <image src="/images/右箭头.png"></image>
+      </view>
+      <view class="commit" >
+        <text>我的好友</text>
+        <image src="/images/右箭头.png"></image>
+      </view>
+      <view class="commit">
+        <text>我的收藏</text>
+        <image src="/images/右箭头.png"></image>
+      </view>
+      <view class="commit">
+        <text>我的地址</text>
+        <image src="/images/右箭头.png"></image>
+      </view>
+    </view>
+    <view class="money">
+      <text class="bao">我的钱包</text>
+      <text class="yu">余额：</text>
+      <text class="num">￥10</text>
+    </view>
+    <view class="please">
+      <view class="commit">
+        <text>邀请有奖</text>
+        <image src="/images/右箭头.png"></image>
+      </view>
+       <view class="commit">
+        <text>商家入驻</text>
+        <image src="/images/右箭头.png"></image>
+      </view>
+    </view>
+    <view class="help">
+      <view class="commit">
+        <text>帮助与反馈</text>
+        <image src="/images/右箭头.png"></image>
+      </view>
+       <view class="commit">
+        <text>在线客服</text>
+        <view class="time">9:00-23:00</view>
+      </view>
+    </view>
+  </view>
+    </view>
+</view>

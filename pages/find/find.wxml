@@ -1,0 +1,40 @@
+
+  <view class="header">
+    <view class="header-item {{currentTab == index ? 'active' : ''}}" wx:for='{{headerList}}' wx:for-index="index" bindtap="switchTab" data-index="{{index}}">
+      {{item}}
+    </view>
+  </view>
+
+  <!-- 垂直滚动在scroll-view空间中需要定义高度height-->
+  <scroll-view class="content1" scroll-y style="height:{{scrollHeight}}px" bindscrolltoupper="upper" bindscrolltolower="lower">
+    <block wx:for="{{reLoad}}" wx:for-index="index" >
+      <view class="contentItem" hidden="{{currentTab ==0 ? '' : true}}">
+        <view class="headImg1">
+          <image src="{{item.headImg}}" class="head1"></image>
+        </view>
+        <view class="right1">
+          <view class="rightTop1">
+            <text class="title">{{item.title}}</text>
+            <image src="/images/userMore.png" class="userMore"></image>
+          </view>
+          <view class="rightBottom">
+            <image class="show" src="{{item.showImg}}"></image>
+            <view class="info">
+              <text class="infoTitle">{{item.infoTitle}}</text>
+              <text class="time">{{item.time}}小时前</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+  <!-- 瀑布流布局 -->
+     <view class="pubu" hidden="{{currentTab ==1 ? '' : true}}">
+       <waterfall></waterfall>
+     </view>
+
+    <!-- 网格布局 -->
+    <view class="wang" hidden="{{currentTab ==2 ? '' : true}}">
+      <wang></wang>
+    </view>
+  </scroll-view>

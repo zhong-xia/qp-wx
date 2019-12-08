@@ -1,0 +1,436 @@
+.header {
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+  background: #feb70f;
+}
+
+.header-top {
+  width: 100%;
+  height: 220rpx;
+  border-bottom: 1px dotted #666;
+}
+
+.img {
+  width: 300rpx;
+  height: 200rpx;
+  float: left;
+}
+
+.name {
+  padding: 10rpx 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-left: 300rpx;
+}
+
+.ad {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5rpx 20rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+button:not([size='mini']) {
+  width: 100%;
+}
+
+.shoucang {
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 20rpx;
+  background: #feb70f;
+  position: absolute;
+  bottom: 90rpx;
+  right: 0;
+}
+
+.card {
+  width: 100%;
+  height: 80rpx;
+  font-size: 24rpx;
+  color: #ff6347;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.c1 {
+  width: 100rpx;
+  height: 40rpx;
+  border: 1px solid #ff6347;
+}
+
+.c2, .c3 {
+  width: 120rpx;
+  height: 40rpx;
+  border: 1px solid #ff6347;
+}
+
+.top-tab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  color: #000;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  z-index: 9999;
+}
+
+.toptab {
+  flex: 1;
+  text-align: center;
+}
+
+.toptab.active {
+  color: #000;
+  font-weight: bold;
+  border-bottom: solid 2px #feb70f;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20rpx;
+  justify-content: center;
+}
+
+.classify {
+  width: 250rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  background: #efefef;
+  border-bottom: 1px dotted #888;
+}
+
+.name {
+  text-align: center;
+  font-size: 30rpx;
+  color: #000;
+  margin: 0;
+}
+
+.right-content {
+  background: #fff;
+}
+
+.content-right {
+  width: 450rpx;
+}
+
+.content-title {
+  width: 450rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #888;
+}
+
+.goods {
+  width: 450rpx;
+  height: 160rpx;
+  position: relative;
+  display: flex;
+  margin-top: 10rpx;
+  flex-direction: row;
+}
+
+.img1 {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.goods-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-title {
+  display: inline-block;
+  font-size: 30rpx;
+  font-weight: bold;
+  padding: 5rpx 10rpx;
+}
+
+.sale {
+  font-size: 24rpx;
+  color: #888;
+  display: inline-block;
+  padding: 5rpx 10rpx;
+}
+
+.price {
+  font-size: 28rpx;
+  color: red;
+  display: inline-block;
+  padding: 5rpx 10rpx;
+}
+
+.jia {
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  background: #feb70f;
+  border-radius: 50%;
+}
+
+.assess {
+  width: 100%;
+}
+
+.assess-container {
+  width: 100%;
+}
+
+.assess-content {
+  width: 100%;
+  height: 670rpx;
+  display: flex;
+  margin-top: 10rpx;
+  flex-direction: row;
+}
+
+.assess-content-left {
+  width: 80rpx;
+  height: 670rpx;
+}
+
+.userHead {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.assess-content-right {
+  width: 650rpx;
+  height: 670rpx;
+}
+
+.assess-rightHeader {
+  height: 80rpx;
+  position: relative;
+}
+
+.userInfo {
+  width: 590rpx;
+}
+
+.userName {
+  font-size: 32rpx;
+  color: #000;
+}
+
+.userGoods {
+  width: 590rpx;
+  height: 30rpx;
+  font-size: 24rpx;
+  color: #888;
+  margin-top: 9rpx;
+}
+
+.goodsName {
+  padding-left: 20rpx;
+}
+
+.icon {
+  position: absolute;
+  right: 15rpx;
+  top: 0;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.assess-rightBody {
+  max-height: 550rpx;
+  margin-top: 5rpx;
+}
+
+.assess-rightBodyContent {
+  font-size: 28rpx;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #000;
+}
+
+.rightBodyImg {
+  margin-top: 10rpx;
+  width: 300rpx;
+  height: 400rpx;
+}
+
+.assess-rightBottom {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 50rpx;
+}
+
+.liulan, .pinglun, .dianzan {
+  font-size: 20rpx;
+  line-height: 50rpx;
+  color: #888;
+}
+
+.bottomCommit {
+  right: 0;
+  position: absolute;
+  margin-right: 120rpx;
+}
+
+.bottomZan {
+  right: 0;
+  position: absolute;
+  margin-right: 30rpx;
+}
+
+.pl, .zan {
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 5rpx;
+}
+
+.hotel {
+  width: 100%;
+  height: 800rpx;
+  margin-top: 20rpx;
+  background: #eee;
+}
+
+.hotelTop {
+  width: 100%;
+  height: 200rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+}
+
+.hotelBottom {
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+}
+
+.top1, .bottom1 {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #888;
+}
+
+.top1-left {
+  width: 600rpx;
+  height: 100rpx;
+}
+
+.top2 {
+  position: relative;
+}
+
+.icon1, .icon2, .serve, .time {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.serve {
+  margin-top: 30rpx;
+}
+
+.address, .safe, .offer {
+  flex: 1;
+  font-size: 24rpx;
+  word-break: break-all;
+  line-height: 100rpx;
+}
+
+label {
+  color: #333;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+}
+
+.phone {
+  width: 40rpx;
+  height: 40rpx;
+  margin: auto;
+}
+
+.right {
+  width: 35rpx;
+  height: 35rpx;
+  float: right;
+  right: 40rpx;
+  position: absolute;
+  top: 30rpx;
+}
+
+.footer {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 20rpx;
+  border-top: 1px solid #efefef;
+  display: flex;
+  flex-direction: row;
+}
+
+.cart {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: #feb70f;
+  position: relative;
+}
+
+.cart image {
+  width: 100%;
+  height: 100%;
+}
+
+.count {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: -15rpx;
+  left: 65rpx;
+}
+.money{
+  padding-left: 200px;
+  margin-right: 10rpx;
+color: red;
+font-size: 32rpx;
+font-weight: bold;
+margin-top: 40rpx;
+}
+button:not([size='mini']){
+  width:100%;
+}
+.last{
+  height: 60rpx;
+  font-size: 30rpx;
+  background: #feb70f;
+  top: 15rpx;
+}

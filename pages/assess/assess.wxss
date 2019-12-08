@@ -1,0 +1,177 @@
+.assessContainer{
+  width: 100%;
+  height: 100%;
+}
+.page{
+  width: 100%;
+  box-sizing: border-box;
+  background: #eee;
+}
+.assessHead{
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  background: #fff;
+}
+.list-bottom {
+  width: 100%;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.goodImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.goodInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #888;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+.assessInfo{
+  width: 100%;
+  box-sizing: border-box;
+}
+.infoHead{
+  width: 100%;
+  height: 290rpx;
+}
+.infoHeadTop{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ddd;
+}
+.desc{
+  font-size: 32rpx;
+  color: #000;
+  font-weight: bold;
+}
+.xing{
+  height: 80rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.xing image{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 15rpx;
+}
+.input{
+  width:100%;
+  height: 100rpx;
+}
+.infoBottom{
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+}
+.add{
+  width: 100%;
+  height: 50rpx;
+  font-size: 25rpx;
+  color: #444;
+  line-height: 50rpx;
+}
+.addBottom{
+  position: relative;
+  width: 100%;
+  height: 160rpx;
+  padding: 20rpx 20rpx 20rpx 0rpx;
+  margin-bottom: 1px solid #ccc;
+}
+.camera{
+  position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  border: 1px dotted #888;
+  display: flex;
+  flex-direction: column;
+}
+.video{
+   position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  border: 1px dotted #888;
+  display: flex;
+  flex-direction: column;
+  left:180rpx;
+}
+.dotted{
+  width: 40rpx;
+height: 40rpx;
+margin-bottom: 10rpx;
+position: absolute;
+top: 20rpx;
+left: 50rpx;
+}
+.text{
+  font-size: 28rpx;
+  color: #aaa;
+  position: absolute;
+bottom: 30rpx;
+left: 20rpx;
+}
+.shopAccess{
+  width: 100%;
+  padding: 20rpx;
+  background: #fff;
+}
+.shopAccessTitle{
+  width: 100%;
+  height: 70rpx;
+  border-bottom: 1px solid #eee;
+}
+.shopAccessContent{
+  width: 100%;
+  height: 150rpx;
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.serve{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+}
+.attitude{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+}
+.song{
+  font-size: 32rpx;
+  color: #000;
+}
+.xing{
+  height: 80rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.xing image{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 15rpx;
+}

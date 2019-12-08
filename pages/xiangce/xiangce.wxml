@@ -1,0 +1,6 @@
+<view class="content2">
+  <view class="water2" wx:for="{{waterList}}" wx:for-item="item" style="{{goodsItemStyles}}">
+    <image src="{{item}}" class="img2"></image>
+  </view>
+</view>
+

@@ -1,0 +1,73 @@
+.content2 {
+  width: 100%;
+  box-sizing: border-box;
+  column-count: 2;
+  column-gap: 20rpx;
+}
+
+.water2 {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom:20rpx;
+  height: 650rpx;
+}
+
+.img2 {
+  width: 320rpx;
+height: 480rpx;
+
+}
+
+.assess2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #000;
+}
+
+.user2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  position: relative;
+  margin-top: 20rpx;
+}
+
+.headImg2 {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.headImg2 image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.userName2{
+  font-size: 26rpx;
+margin-left: 50rpx;
+
+}
+.zan2{
+  width: 20rpx;
+height: 20rpx;
+position: absolute;
+right: 40rpx;
+bottom: 10rpx;
+
+}
+.num2{
+  position: absolute;
+right: 7rpx;
+font-size: 23rpx;
+bottom: 5rpx
+}

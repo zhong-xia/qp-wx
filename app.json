@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/order/order",
+    "pages/find/find",
+    "pages/my/my",
+    "pages/home/home",
+    "pages/search/search",
+    "pages/shop/shop",
+    "pages/assess/assess",
+    "pages/pay/pay",
+    "component/wang/wang",
+    "pages/camera/camera",
+    "pages/xiangce/xiangce",
+    "pages/video/video",
+    "pages/myAccess/myAccess"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#feb70f",
+    "navigationBarTitleText": "汽配商城",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#efefef",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#A9A9A9",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabbar/home.png",
+        "selectedIconPath": "/images/tabbar/homeselected.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "/images/tabbar/find.png",
+        "selectedIconPath": "/images/tabbar/findselected.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "/images/tabbar/order.png",
+        "selectedIconPath": "/images/tabbar/orderselected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/tabbar/my.png",
+        "selectedIconPath": "/images/tabbar/myselected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

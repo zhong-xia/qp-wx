@@ -1,0 +1,105 @@
+.container{
+  width: 100%;
+  height: 100%;
+}
+.page{
+  width: 100%;
+  box-sizing: border-box;
+  background: #eee;
+}
+.head{
+  width: 100%;
+  height: 180rpx;
+  background: #feb70f;
+  display: flex;
+  flex-direction: row;
+}
+.userImg{
+  display: block;
+  overflow: hidden;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin: 20rpx 10rpx;
+}
+.userRight{
+  margin-right: 10rpx;
+}
+.userName{
+  margin-top: 25rpx;
+  display: inline-block;
+}
+.userAddress{
+  padding-top: 10rpx;
+}
+.myContent{
+  width: 100%;
+  box-sizing: border-box;
+}
+.myContent1{
+  width:100%;
+  height: 360rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.commit{
+  width: 100%;
+  position: relative;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #eee;
+}
+.commit text,.bao{
+  font-size: 32rpx;
+  line-height: 90rpx;
+  position: absolute;
+  left: 30rpx;
+}
+.commit image{
+  position: absolute;
+  right: 30rpx;
+  width: 40rpx;
+  height: 35rpx;
+  top: 30%;
+}
+.money{
+  width: 100%;
+  height: 90rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+  position: relative;
+}
+.yu{
+  font-size: 32rpx;
+  color: rgb(163, 162, 162);
+  position: absolute;
+  right: 90rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.num{
+  font-size: 30rpx;
+  color: red;
+  position: absolute;
+  right: 30rpx;
+  line-height: 80rpx;
+}
+.please{
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.help{
+  width: 100%;
+  height: 180rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.time{
+  position: absolute;
+  right: 30rpx;
+  font-size: 30rpx;
+  color: rgb(163, 162, 162);
+}

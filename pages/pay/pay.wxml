@@ -1,0 +1,78 @@
+<view class="container">
+  <view class="page">
+    <view class="address">
+      <view class="location">
+        <view class="localImg">
+          <image src="/images/定位白.png" class="imgB"></image>
+        </view>
+      </view>
+      <view class="addressInfo">
+        <view class="userInfo">
+          <text class="name">简单点</text>
+          <text class="phone">12345678902</text>
+        </view>
+        <view class="userAddress">
+          记得搜房经纬纺机哦门卫放假哦2金佛我就饿哦访问江郎才尽
+        </view>
+      </view>
+    </view>
+    <view class="content">
+      <block wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+        <view class="list-bottom" hidden="{{Index == index ? '' : true}}">
+          <image class="goodImg" src="{{item.goodImg}}"></image>
+          <view class="goodInfo">
+            <text class="num">数量：{{item.num}}</text>
+            <text class="price">总价：￥{{item.price}}</text>
+          </view>
+        </view>
+      </block>
+      <view class="contentBottom">
+        <view class="song">
+          配送方式
+          <radio-group class="group">
+            <radio class="pu" checked>
+              <text>普通配送</text>
+            </radio>
+            <radio class="other">
+              <text>其他</text>
+            </radio>
+          </radio-group>
+        </view>
+        <view class="zhu">
+          订单备注
+          <input placeholder="选填，请先和商家协商一致" class="tian"></input>
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="bottomTap">
+        <image src="/images/订单.png" class="ding"></image>
+        <text class="font">订单信息</text>
+      </view>
+      <view class="bottomContent">
+        <view class="hao">
+          <text class="left">订单号：</text>
+          <text class="right">5641099490</text>
+        </view>
+        <view class="shou">
+          <text class="left">手机号：</text>
+          <text class="right">123****0978</text>
+        </view>
+        <view class="xia">
+          <text class="left1">下单时间：</text>
+          <text class="right">2019-10-3</text>
+        </view>
+        <view class="shu">
+          <text class="left2">数量：</text>
+          <text class="right">2</text>
+        </view>
+        <view class="zong">
+          <text class="left2">总价：</text>
+          <text class="right">￥190</text>
+        </view>
+      </view>
+    </view>
+
+    <button bindtap="pay">立即支付</button>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+.content2 {
+  width: 100%;
+  box-sizing: border-box;
+  column-count: 2;
+  column-gap: 20rpx;
+}
+.water2 {
+  background-color: #fff;
+  height: 500rpx;
+}
+
+.img2 {
+  width: 320rpx;
+  height: 480rpx;
+}

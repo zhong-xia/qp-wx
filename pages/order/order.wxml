@@ -1,0 +1,102 @@
+<!-- 订单 -->
+<view class="container">
+  <view class="top">
+    <view class="top-item  {{topTab == index ? 'active' : ''}}" wx:for='{{topList}}' wx:for-index="index" bindtap="switchTab" data-index="{{index}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="content">
+    <scroll-view bindscrolltoupper="upper" bindscrolltolower="lower" style="height:{{heightScroll}}px;" scroll-y>
+        <swiper autoplay circular indicator-dots hidden="{{topTab == 0 ? '' : true}}">
+          <swiper-item>
+            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2164982371,2535211302&fm=15&gp=0.jpg"></image>
+          </swiper-item>
+          <swiper-item>
+            <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2251000770,3932364663&fm=15&gp=0.jpg"></image>
+          </swiper-item>
+          <swiper-item>
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3934704358,3045363970&fm=26&gp=0.jpg"></image>
+          </swiper-item>
+        </swiper>
+      <block wx:for="{{orderList}}" wx:for-index="index">
+      
+        <view class="list" hidden="{{topTab == 0 ? '' :true}}">
+          <view class="list-top">
+            <image class="listHead" src="{{item.listHead}}"></image>
+            <text class="listTitle">{{item.listTitle}}</text>
+            <text class="result">{{item.result}}</text>
+          </view>
+          <view class="list-bottom">
+            <image class="goodImg" src="{{item.goodImg}}"></image>
+            <view class="goodInfo">
+              <text class="num">数量：{{item.num}}</text>
+              <text class="price">总价：￥{{item.price}}</text>
+            </view>
+          </view>
+          <button size="mini" class="pingjia" data-id="{{item.id}}" bindtap="switchTap" data-index="{{index}}">{{item.pingjia}}</button>
+        </view>
+      </block>
+
+      <block wx:for="{{payList}}">
+        <view class="list" hidden="{{topTab == 1 ? '' :true}}">
+          <view class="list-top">
+            <image class="listHead" src="{{item.listHead}}"></image>
+            <text class="listTitle">{{item.listTitle}}</text>
+            <text class="result">{{item.result}}</text>
+          </view>
+          <view class="list-bottom">
+            <image class="goodImg" src="{{item.goodImg}}"></image>
+            <view class="goodInfo">
+              <text class="num">数量：{{item.num}}</text>
+              <text class="price">总价：￥{{item.price}}</text>
+            </view>
+          </view>
+          <button size="mini" class="pingjia" data-id="{{item.id}}" bindtap="switchTap" data-index="{{index}}">{{item.pingjia}}</button>
+        </view>
+      </block>
+
+      <view class="noUse" hidden="{{topTab == 2 ? '' :true}}">
+        <view class="jilu">
+          <image src="/images/记录.png"></image>
+        </view>
+        <text>暂无订单</text>
+      </view>
+
+       <block wx:for="{{accessList}}">
+        <view class="list" hidden="{{topTab == 3 ? '' :true}}">
+          <view class="list-top">
+            <image class="listHead" src="{{item.listHead}}"></image>
+            <text class="listTitle">{{item.listTitle}}</text>
+            <text class="result">{{item.result}}</text>
+          </view>
+          <view class="list-bottom">
+            <image class="goodImg" src="{{item.goodImg}}"></image>
+            <view class="goodInfo">
+              <text class="num">数量：{{item.num}}</text>
+              <text class="price">总价：￥{{item.price}}</text>
+            </view>
+          </view>
+          <button size="mini" class="pingjia" data-id="{{item.id}}" bindtap="switchTap" data-index="{{index}}">{{item.pingjia}}</button>
+        </view>
+      </block>
+
+       <block wx:for="{{moneyList}}">
+        <view class="list" hidden="{{topTab == 4 ? '' :true}}">
+          <view class="list-top">
+            <image class="listHead" src="{{item.listHead}}"></image>
+            <text class="listTitle">{{item.listTitle}}</text>
+            <text class="result">{{item.result}}</text>
+          </view>
+          <view class="list-bottom">
+            <image class="goodImg" src="{{item.goodImg}}"></image>
+            <view class="goodInfo">
+              <text class="num">数量：{{item.num}}</text>
+              <text class="price">总价：￥{{item.price}}</text>
+            </view>
+          </view>
+          <button size="mini" class="pingjia" data-id="{{item.id}}" bindtap="switchTap" data-index="{{index}}">{{item.pingjia}}</button>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

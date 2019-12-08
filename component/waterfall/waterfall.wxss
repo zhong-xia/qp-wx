@@ -1,0 +1,69 @@
+.content {
+  column-count: 2;
+  column-gap: 20rpx;
+}
+
+.water {
+   background-color: #fff;
+  break-inside: avoid;/*避免在元素内部插入分页符*/
+  box-sizing: border-box; 
+  padding: 20rpx;
+  margin-bottom:20rpx;
+}
+
+.img {
+  width: 100%;
+}
+
+.assess {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  line-height: 35rpx;
+  color: #000;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  position: relative;
+}
+
+.headImg {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.headImg image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.userName{
+  font-size: 26rpx;
+margin-left: 50rpx;
+
+}
+.zan{
+  width: 20rpx;
+height: 20rpx;
+position: absolute;
+right: 40rpx;
+bottom: 10rpx;
+
+}
+.num{
+  position: absolute;
+right: 7rpx;
+font-size: 23rpx;
+bottom: 5rpx
+}
